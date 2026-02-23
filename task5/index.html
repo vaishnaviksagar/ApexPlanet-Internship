@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_5 E-Commerce App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>BloomCart🌸</h1>
+    </header>
+    <nav>
+        <button onclick="showCart()">🛒 Cart (<span id="cart-count">0</span>)</button>
+    </nav>
+    <div class="container">
+        <div class="category">
+            <h2>Dresses</h2>
+            <div class="grid" id="dresses"></div>
+        </div>
+        <div class="category">
+            <h2>Electronics</h2>
+            <div class="grid" id="electronics"></div>
+        </div>
+        <div class="category">
+            <h2>Grocery Finds</h2>
+            <div class="grid" id="groceries"></div>
+        </div>
+    </div>
+    <div id="cart">
+        <h3>Shopping Cart</h3>
+        <ul id="cart-items"></ul>
+        <div id="total">Total: ₹0</div>
+        <button id="checkout">Checkout</button>
+        <button onclick="hideCart()" class="close-btn">Close</button>
+    </div>
+    <footer>
+        <p>&copy; 2026 Anushka's E-Commerce Store | Made with ❤️| For internship purpose only.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
