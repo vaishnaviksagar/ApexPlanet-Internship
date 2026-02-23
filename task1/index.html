@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Task Webpage</title>
+</head>
+<style>
+
+html {
+    background-color: rgb(207, 150, 150);
+}
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        line-height: 1.6;
+    }
+
+    h1 {
+        color: brown;
+        text-align: center;
+    }
+
+    .container {
+        background-color: rgb(240, 198, 146);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1 );
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+    } 
+
+    button{
+        background-color: rgb(104, 181, 211);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        display: block;
+        margin: 20px auto;
+    }
+
+    button:hover {
+        background-color: #2880b9;
+    }
+
+    a {
+        color: #3498db;
+        text-decoration: wavy;
+    }
+</style>
+
+
+<body>
+    <div class="container">
+        <h1>Welcome To My Webpage</h1>
+        <h2>About Myself</h2>
+        <p>Hello!😁 My name is Vaishnavi and I'm a front-end Developer and Backend learner</p>
+        <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200203200336/13-Things-You-Should-Know-Before-You-Enter-In-Web-Development.png" alt="Web Development">
+        <h2>My Interests</h2>
+        <p>My personal interests are:</p>
+        <ul>
+            <li>Web Development(Mostly-Frontend)</li>
+            <li>Backend Development(Currently Learning)</li>
+            <li>DSA</li>
+        </ul>
+            <p>Learn more about Web Dev on <a href="https://www.geeksforgeeks.org/web-development/" target="_blank">Web Development</a></p>
+            <button onclick="showMessage()">Click Here!</button>
+        </div>
+        <script>
+        // Let us use JavaScript for Interaction
+        function showMessage() {
+            alert("Thank you for clicking me!");
+        }
+    </script>
+</body>
+</html>
